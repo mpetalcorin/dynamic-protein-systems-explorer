@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #f8fafc;
-  background: #020617;
+  color: #e5edf7;
+  background: #050816;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -19,9 +19,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.38), transparent 32%),
-    radial-gradient(circle at top right, rgba(147, 51, 234, 0.28), transparent 30%),
-    #020617;
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 30%),
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 28%),
+    #050816;
 }
 
 a {
@@ -30,9 +30,7 @@ a {
 }
 
 button,
-input,
-select,
-textarea {
+input {
   font: inherit;
 }
 
@@ -51,7 +49,7 @@ textarea {
 }
 
 .hero-content {
-  max-width: 850px;
+  max-width: 820px;
 }
 
 .badge {
@@ -59,10 +57,10 @@ textarea {
   gap: 8px;
   align-items: center;
   padding: 8px 12px;
-  border: 1px solid rgba(191, 219, 254, 0.45);
+  border: 1px solid rgba(147, 197, 253, 0.35);
   border-radius: 999px;
-  color: #eff6ff;
-  background: rgba(30, 64, 175, 0.55);
+  color: #bfdbfe;
+  background: rgba(15, 23, 42, 0.75);
   margin-bottom: 24px;
 }
 
@@ -71,19 +69,17 @@ h1 {
   line-height: 0.95;
   letter-spacing: -0.08em;
   margin: 0;
-  color: #f8fafc;
 }
 
 .hero-text {
   font-size: clamp(1.05rem, 2vw, 1.35rem);
-  color: #dbeafe;
-  max-width: 780px;
+  color: #b8c7da;
+  max-width: 760px;
   line-height: 1.7;
   margin: 28px 0;
 }
 
-.hero-actions,
-.button-row {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -120,29 +116,15 @@ h1 {
   background: linear-gradient(135deg, #93c5fd, #c4b5fd);
 }
 
-.hero-card,
-.metric-card,
-.chart-card,
-.detail-card,
-.application-grid > div,
-.analysis-stat,
-.table-card,
-.interpretation-card,
-.network-card,
-.sequence-results,
-.reference-card {
-  background: rgba(15, 23, 42, 0.92);
-  border: 1px solid rgba(191, 219, 254, 0.26);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.42);
-}
-
 .hero-card {
   min-height: 480px;
+  border: 1px solid rgba(226, 232, 240, 0.16);
   border-radius: 36px;
   padding: 36px;
   background:
-    linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.58)),
+    linear-gradient(145deg, rgba(15, 23, 42, 0.82), rgba(30, 41, 59, 0.42)),
     radial-gradient(circle at center, rgba(96, 165, 250, 0.25), transparent 50%);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,11 +133,10 @@ h1 {
 .hero-card h2 {
   font-size: 2rem;
   margin-top: 32px;
-  color: #f8fafc;
 }
 
 .hero-card p {
-  color: #dbeafe;
+  color: #c4d2e3;
   line-height: 1.7;
 }
 
@@ -207,8 +188,7 @@ h1 {
 .charts-section,
 .application-grid,
 .analysis-summary-grid,
-.advanced-grid,
-.reference-grid {
+.advanced-grid {
   padding: 36px 7vw;
   display: grid;
   gap: 22px;
@@ -218,9 +198,21 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.metric-card,
+.chart-card,
+.detail-card,
+.application-grid > div,
+.analysis-stat,
+.table-card,
+.interpretation-card {
+  border: 1px solid rgba(226, 232, 240, 0.14);
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.72);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
 .metric-card {
   padding: 24px;
-  border-radius: 28px;
 }
 
 .metric-card svg,
@@ -241,12 +233,8 @@ h1 {
 .detail-card li,
 .analysis-stat span,
 .table-card p,
-.interpretation-card p,
-.sequence-results p,
-.reference-card p,
-.network-node span,
-.network-node em {
-  color: #dbeafe;
+.interpretation-card p {
+  color: #b8c7da;
   line-height: 1.7;
 }
 
@@ -257,31 +245,15 @@ h1 {
 }
 
 .section-header {
-  max-width: 1040px;
+  max-width: 980px;
   margin-bottom: 24px;
-}
-
-.section-header h2,
-.chart-card h2,
-.chart-card h3,
-.table-header h3,
-.interpretation-card h3,
-.reference-card h3 {
-  color: #f8fafc;
-  letter-spacing: -0.04em;
 }
 
 .section-header h2,
 .chart-card h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
   margin: 0 0 10px;
-}
-
-.search-box,
-.control-panel,
-.sequence-grid {
-  display: grid;
-  gap: 18px;
+  letter-spacing: -0.04em;
 }
 
 .search-box {
@@ -302,64 +274,6 @@ h1 {
   border: 0;
   outline: 0;
   color: #f8fafc;
-}
-
-.control-panel {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 28px;
-}
-
-.control-panel > div {
-  padding: 18px;
-  border: 1px solid rgba(191, 219, 254, 0.22);
-  border-radius: 22px;
-  background: rgba(15, 23, 42, 0.76);
-}
-
-label {
-  display: block;
-  color: #f8fafc;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-select,
-textarea {
-  width: 100%;
-  color: #f8fafc;
-  background: rgba(2, 6, 23, 0.9);
-  border: 1px solid rgba(147, 197, 253, 0.34);
-  border-radius: 14px;
-  padding: 12px;
-  outline: none;
-}
-
-textarea {
-  min-height: 260px;
-  resize: vertical;
-  line-height: 1.6;
-}
-
-.file-upload {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  width: fit-content;
-  padding: 12px 16px;
-  border-radius: 14px;
-  color: #06111f;
-  background: linear-gradient(135deg, #93c5fd, #c4b5fd);
-  cursor: pointer;
-}
-
-.file-upload input {
-  display: none;
-}
-
-small {
-  display: block;
-  color: #bfdbfe;
-  margin-top: 10px;
 }
 
 .explorer-layout {
@@ -396,17 +310,13 @@ small {
 }
 
 .module-button small {
-  color: #bfdbfe;
+  display: block;
+  color: #93a7bd;
+  margin-top: 4px;
 }
 
-.detail-card,
-.chart-card,
-.table-card,
-.interpretation-card,
-.network-card,
-.reference-card {
-  border-radius: 28px;
-  padding: 28px;
+.detail-card {
+  padding: 30px;
 }
 
 .detail-title {
@@ -431,7 +341,12 @@ small {
 
 .summary {
   font-size: 1.12rem;
-  color: #eff6ff !important;
+  color: #dbeafe !important;
+}
+
+.detail-card h4 {
+  font-size: 1.2rem;
+  margin-top: 28px;
 }
 
 .detail-card ol {
@@ -442,14 +357,27 @@ small {
   margin-bottom: 10px;
 }
 
-.charts-section,
-.advanced-grid {
+.charts-section {
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 72px;
+}
+
+.chart-card {
+  padding: 28px;
+}
+
+.chart-card h3 {
+  font-size: 1.45rem;
+  margin: 0 0 8px;
 }
 
 .chart-wrapper {
   height: 320px;
   margin-top: 20px;
+}
+
+.advanced-section {
+  padding-top: 80px;
 }
 
 .analysis-summary-grid {
@@ -461,16 +389,21 @@ small {
   padding: 22px;
   display: grid;
   gap: 8px;
-  border-radius: 28px;
 }
 
 .analysis-stat strong {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: #f8fafc;
+}
+
+.advanced-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0;
 }
 
 .table-card,
 .interpretation-card {
+  padding: 28px;
   margin-top: 24px;
 }
 
@@ -482,6 +415,12 @@ small {
   margin-bottom: 18px;
 }
 
+.table-header h3,
+.interpretation-card h3 {
+  font-size: 1.55rem;
+  margin: 0 0 8px;
+}
+
 .table-scroll {
   overflow-x: auto;
 }
@@ -489,7 +428,7 @@ small {
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 1020px;
+  min-width: 920px;
 }
 
 th,
@@ -505,75 +444,11 @@ th {
 }
 
 td {
-  color: #e2e8f0;
+  color: #c4d2e3;
 }
 
 tr:hover td {
   background: rgba(30, 64, 175, 0.16);
-}
-
-.experiment-list {
-  color: #dbeafe;
-  line-height: 1.8;
-}
-
-.sequence-grid {
-  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
-}
-
-.sequence-results {
-  border-radius: 28px;
-  padding: 24px;
-  display: grid;
-  gap: 14px;
-}
-
-.sequence-results div {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  border-bottom: 1px solid rgba(226, 232, 240, 0.12);
-  padding-bottom: 10px;
-}
-
-.sequence-results span {
-  color: #bfdbfe;
-}
-
-.sequence-results strong {
-  color: #f8fafc;
-}
-
-.network-card {
-  overflow-x: auto;
-}
-
-.node-row {
-  display: flex;
-  gap: 16px;
-  min-width: 980px;
-  align-items: stretch;
-}
-
-.network-node {
-  min-width: 180px;
-  padding: 18px;
-  border: 1px solid rgba(147, 197, 253, 0.34);
-  border-radius: 22px;
-  background: rgba(30, 64, 175, 0.26);
-  display: grid;
-  gap: 8px;
-}
-
-.network-node strong {
-  color: #f8fafc;
-  font-size: 1.25rem;
-}
-
-.network-node em {
-  font-style: normal;
-  color: #93c5fd;
-  font-weight: 700;
 }
 
 .application-grid {
@@ -583,66 +458,34 @@ tr:hover td {
 
 .application-grid > div {
   padding: 26px;
-  border-radius: 28px;
 }
 
 .application-grid h3 {
   font-size: 1.35rem;
 }
 
-.reference-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: 0;
-}
-
-.reference-card a {
-  color: #93c5fd;
-  overflow-wrap: anywhere;
-}
-
 footer {
   padding: 42px 7vw 64px;
-  color: #bfdbfe;
+  color: #93a7bd;
   text-align: center;
 }
 
 .recharts-wrapper text {
-  fill: #f8fafc !important;
-  font-weight: 600;
-}
-
-.recharts-cartesian-axis-line,
-.recharts-cartesian-axis-tick-line,
-.recharts-polar-angle-axis-tick-line {
-  stroke: rgba(226, 232, 240, 0.7) !important;
+  fill: #cbd5e1;
 }
 
 .recharts-cartesian-grid line,
 .recharts-polar-grid-angle line,
 .recharts-polar-grid-concentric path {
-  stroke: rgba(191, 219, 254, 0.28) !important;
-}
-
-.recharts-default-tooltip {
-  background: #f8fafc !important;
-  border: 1px solid #93c5fd !important;
-  border-radius: 12px !important;
-  color: #020617 !important;
-}
-
-.recharts-tooltip-label,
-.recharts-tooltip-item {
-  color: #020617 !important;
+  stroke: rgba(226, 232, 240, 0.18);
 }
 
 @media (max-width: 1100px) {
-  .analysis-summary-grid,
-  .metrics-grid {
+  .analysis-summary-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .advanced-grid,
-  .sequence-grid {
+  .advanced-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -653,11 +496,10 @@ footer {
     padding-top: 46px;
   }
 
+  .metrics-grid,
   .charts-section,
-  .application-grid,
-  .reference-grid,
-  .control-panel {
-    grid-template-columns: 1fr;
+  .application-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .explorer-layout {
@@ -710,9 +552,97 @@ footer {
 
   .chart-card,
   .table-card,
-  .interpretation-card,
-  .network-card,
-  .reference-card {
+  .interpretation-card {
     padding: 20px;
   }
 }
+
+/* High-contrast visual upgrade */
+:root {
+  color: #f8fafc;
+  background: #020617;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.38), transparent 32%),
+    radial-gradient(circle at top right, rgba(147, 51, 234, 0.28), transparent 30%),
+    #020617;
+}
+
+.metric-card,
+.chart-card,
+.detail-card,
+.application-grid > div,
+.analysis-stat,
+.table-card,
+.interpretation-card,
+.hero-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(191, 219, 254, 0.26);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.42);
+}
+
+h1,
+h2,
+h3,
+h4,
+.detail-title h3,
+.section-header h2,
+.chart-card h2,
+.chart-card h3 {
+  color: #f8fafc;
+}
+
+.hero-text,
+.metric-card p,
+.section-header p,
+.chart-card p,
+.application-grid p,
+.detail-card p,
+.detail-card li,
+.analysis-stat span,
+.table-card p,
+.interpretation-card p {
+  color: #dbeafe;
+}
+
+.badge {
+  color: #eff6ff;
+  background: rgba(30, 64, 175, 0.55);
+  border-color: rgba(191, 219, 254, 0.45);
+}
+
+.recharts-wrapper text {
+  fill: #f8fafc !important;
+  font-weight: 600;
+}
+
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line,
+.recharts-polar-angle-axis-tick-line {
+  stroke: rgba(226, 232, 240, 0.7) !important;
+}
+
+.recharts-cartesian-grid line,
+.recharts-polar-grid-angle line,
+.recharts-polar-grid-concentric path {
+  stroke: rgba(191, 219, 254, 0.28) !important;
+}
+
+.recharts-tooltip-wrapper {
+  color: #020617 !important;
+}
+
+.recharts-default-tooltip {
+  background: #f8fafc !important;
+  border: 1px solid #93c5fd !important;
+  border-radius: 12px !important;
+  color: #020617 !important;
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item {
+  color: #020617 !important;
+}
+
