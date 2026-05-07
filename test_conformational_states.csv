@@ -1,0 +1,6 @@
+state,label,population,resolution,freeEnergy,rmsd,interface,aiScore
+S1,Open apo state,15,3.9,2.4,3.6,40,61
+S2,Ligand encounter state,23,3.5,1.5,2.7,62,75
+S3,Stabilised ternary complex,37,3.0,0.2,1.6,91,98
+S4,Productive catalytic state,18,3.2,0.7,2.0,83,90
+S5,Inactive off-pathway state,7,4.4,3.7,5.2,25,36

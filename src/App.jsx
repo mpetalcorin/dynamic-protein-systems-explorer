@@ -455,11 +455,11 @@ Mechanistic score = 0.25 × population score + 0.20 × map quality score + 0.20 
 
 Conformational state table:
 ${states
-  .map(
-    (row) =>
-      `${row.state}: ${row.label}, population=${row.population}%, resolution=${row.resolution} Å, freeEnergy=${row.freeEnergy}, RMSD=${row.rmsd} Å, interface=${row.interface}, AI=${row.aiScore}, mechanisticScore=${mechanisticScore(row).toFixed(1)}`
-  )
-  .join("\n")}
+      .map(
+        (row) =>
+          `${row.state}: ${row.label}, population=${row.population}%, resolution=${row.resolution} Å, freeEnergy=${row.freeEnergy}, RMSD=${row.rmsd} Å, interface=${row.interface}, AI=${row.aiScore}, mechanisticScore=${mechanisticScore(row).toFixed(1)}`
+      )
+      .join("\n")}
 
 Protein sequence analysis:
 Length=${sequenceStats.length}
@@ -583,15 +583,14 @@ function App() {
             <Sparkles size={16} />
             Dynamic Protein Systems Explorer v2
           </motion.div>
-
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
+            className="hero-title-small"
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.65 }}
+            transition={{ duration: 0.55 }}
           >
             Research app for protein motion, cryo-EM states, and AI-guided mechanism
           </motion.h1>
-
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
