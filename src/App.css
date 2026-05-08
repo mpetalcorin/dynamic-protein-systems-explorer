@@ -736,3 +736,41 @@ footer {
     letter-spacing: -0.035em;
   }
 }
+.brand-badge {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  border: 1px solid rgba(191, 219, 254, 0.48);
+  border-radius: 999px;
+  color: #eff6ff;
+  background: rgba(30, 64, 175, 0.58);
+  margin-bottom: 24px;
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.25);
+}
+
+.brand-mark {
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(219, 234, 254, 0.55);
+}
+
+footer strong {
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 640px) {
+  .brand-badge {
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+}

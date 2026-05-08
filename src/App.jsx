@@ -578,10 +578,12 @@ function App() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55 }}
-            className="badge"
+            className="brand-badge"
           >
+            <span className="brand-mark">aAidea</span>
+            <span className="brand-divider"></span>
             <Sparkles size={16} />
-            Dynamic Protein Systems Explorer v2
+            <span>Dynamic Protein Systems Explorer v2</span>
           </motion.div>
           <motion.h1
             className="hero-title-small"
@@ -1101,7 +1103,7 @@ function App() {
 
       <footer>
         <p>
-          Built as a scientific research app for dynamic structural biology,
+          <strong>aAidea</strong> | Scientific software for dynamic structural biology,
           computational biochemistry, and AI-guided protein mechanism.
         </p>
       </footer>
